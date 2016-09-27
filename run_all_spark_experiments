@@ -1,0 +1,41 @@
+%% Large-scale classification
+
+% epsilon dataset
+spark-submit --master local[*] large_scale\run_SparkLRSGD_epsilon.py
+spark-submit --master local[*] large_scale\run_SparkLRLBFGS_epsilon.py
+spark-submit --master local[*] large_scale\run_SparkLSVM_epsilon.py
+spark-submit --master local[*] large_scale\run_SparkDT_epsilon.py
+spark-submit --master local[*] large_scale\run_SparkRF_epsilon.py
+spark-submit --master local[*] --class RunSparkLibLinearEpsilon --jars large_scale\spark-liblinear-baseline_2.10-1.0.jar baselines\spark-liblinear-1.96.jar
+spark-submit --master local[*] large_scale\run_SparkOLR_epsilon.py
+
+% susy dataset
+spark-submit --master local[*] large_scale\run_SparkLRSGD_susy.py
+spark-submit --master local[*] large_scale\run_SparkLRLBFGS_susy.py
+spark-submit --master local[*] large_scale\run_SparkNB_susy.py
+spark-submit --master local[*] large_scale\run_SparkLSVM_susy.py
+spark-submit --master local[*] large_scale\run_SparkDT_susy.py
+spark-submit --master local[*] large_scale\run_SparkRF_susy.py
+spark-submit --master local[*] --class RunSparkLibLinearSusy --jars large_scale\spark-liblinear-baseline_2.10-1.0.jar baselines\spark-liblinear-1.96.jar
+spark-submit --master local[*] large_scale\run_SparkOLR_epsilon.py
+
+% mnist8m
+spark-submit --master local[*] large_scale\run_SparkLRLBFGS_mnist8m.py
+spark-submit --master local[*] large_scale\run_SparkNB_mnist8m.py
+spark-submit --master local[*] large_scale\run_SparkDT_mnist8m.py
+spark-submit --master local[*] large_scale\run_SparkRF_mnist8m.py
+spark-submit --master local[*] --class RunSparkLibLinearMNIST8M --jars large_scale\spark-liblinear-baseline_2.10-1.0.jar baselines\spark-liblinear-1.96.jar
+spark-submit --master local[*] large_scale\run_SparkOLR_mnist8m.py
+
+% airlines
+spark-submit --master local[*] large_scale\run_SparkLRSGD_airlines.py
+spark-submit --master local[*] large_scale\run_SparkLRLBFGS_airlines.py
+spark-submit --master local[*] large_scale\run_SparkNB_airlines.py
+spark-submit --master local[*] large_scale\run_SparkLSVM_airlines.py
+spark-submit --master local[*] large_scale\run_SparkDT_airlines.py
+spark-submit --master local[*] large_scale\run_SparkRF_airlines.py
+spark-submit --master local[*] --class RunSparkLibLinearAirlines --jars large_scale\spark-liblinear-baseline_2.10-1.0.jar baselines\spark-liblinear-1.96.jar
+spark-submit --master local[*] large_scale\run_SparkOLR_airlines.py
+
+%% Label-drift classification
+spark-submit --master local[*] label_drift\run_SparkOLR_labeldrift.py

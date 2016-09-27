@@ -1,0 +1,1 @@
+spark-submit --master local[*] large_scale\run_SparkOLR_mnist8m.py
