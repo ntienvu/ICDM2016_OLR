@@ -42,4 +42,4 @@ These codes implement One-pass Logistic Regression (OLR) using MATLAB and Apache
 Dr Vu Nguyen, vu@ieee.org
 
 ### Reference:
-Vu Nguyen, Tu Dinh Nguyen, Trung Le, Svetha Venkatesh, and Dinh Phung. "One-Pass Logistic Regression for Label-Drift and Large-Scale Classification on Distributed Systems." In Data Mining (ICDM), 2016 IEEE 16th International Conference on, pp. 1113-1118. IEEE, 2016.
+Vu Nguyen, Tu Dinh Nguyen, Trung Le, Svetha Venkatesh, and Dinh Phung. "One-Pass Logistic Regression for Label-Drift and Large-Scale Classification on Distributed Systems." In IEEE 16th International Conference on Data Mining (ICDM), pp. 1113-1118. IEEE, 2016.
